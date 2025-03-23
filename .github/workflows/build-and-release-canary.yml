@@ -77,7 +77,7 @@ jobs:
         shell: powershell
       - name: Download & extract latest release
         run: |
-          wget -o ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip https://github.com/Ryubing/Canary-Releases/releases/download/${{ steps.version_info.outputs.build_version }}/ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip
+          wget -o ryujinx-${{ steps.version_info.outputs.build_version }}-win_x64.zip https://github.com/Ryubing/Canary-Releases/releases/download/${{ steps.version_info.outputs.build_version }}/ryujinx-canary-${{ steps.version_info.outputs.build_version }}-win_x64.zip
           wget -o ryujinx-canary-source-${{ steps.version_info.outputs.build_version }}.zip https://git.ryujinx.app/ryubing/ryujinx/-/archive/Canary-${{ steps.version_info.outputs.build_version }}/ryujinx-Canary-${{ steps.version_info.outputs.build_version }}.zip
           7z x ryujinx-canary-${{ steps.version_info.outputs.build_version }}-win_x64.zip
         shell: powershell
